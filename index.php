@@ -103,7 +103,7 @@
           include 'views/master-data/delete.php';
         }
       } else {
-        include 'views/dashboard.html';
+        include 'views/dashboard.php';
       }
       ?>
     </div>
@@ -145,6 +145,9 @@
   <script src="assets/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
   <script src="assets/plugins/datatables-buttons/js/buttons.print.min.js"></script>
   <script src="assets/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+
+
+  <script src="plugins/chart.js/Chart.min.js"></script>
 
   <script>
     $(function() {
