@@ -74,7 +74,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="index.php?halaman=masterdata" class="nav-link">
+                  <a href="index.php?halaman=master-data" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Master Data Barang</p>
                   </a>
@@ -93,8 +93,14 @@
     <div class="content-wrapper">
       <?php
       if (isset($_GET['halaman'])) {
-        if ($_GET['halaman'] == "masterdata") {
-          include 'views/master-data/master-data.php';
+        if ($_GET['halaman'] == "master-data") {
+          include 'views/master-data/view.php';
+        } else if ($_GET['halaman'] == "tambah-master-data") {
+          include 'views/master-data/add.php';
+        } else if ($_GET['halaman'] == "edit-master-data") {
+          include 'views/master-data/edit.php';
+        } else if ($_GET['halaman'] == "hapus-master-data") {
+          include 'views/master-data/delete.php';
         }
       } else {
         include 'views/dashboard.html';

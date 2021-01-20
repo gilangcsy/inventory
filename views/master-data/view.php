@@ -7,7 +7,7 @@
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
-                    <a href="" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                    <a href="index.php?halaman=tambah-master-data" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
                     <table id="example2" class="table table-bordered table-hover">
                         <thead>
                             <tr>
@@ -36,11 +36,11 @@
                                     <td><?= $row['stok'] ?></td>
                                     <td><?= $row['tgl_masuk'] ?></td>
                                     <td>
-                                        <a href="#" class="btn btn-sm btn-danger">
-                                            <i class="fa fa-trash"></i>
+                                        <a href="index.php?halaman=hapus-master-data&id=<?= $row['id_barang'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are You Sure?');">
+                                            <i class=" fa fa-trash"></i>
                                         </a>
 
-                                        <a href="#" class="btn btn-sm btn-success">
+                                        <a href="index.php?halaman=edit-master-data&id=<?= $row['id_barang']; ?>" class="btn btn-sm btn-success">
                                             <i class="fa fa-edit"></i>
                                         </a>
                                     </td>
